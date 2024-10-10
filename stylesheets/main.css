@@ -1,0 +1,580 @@
+body {
+  background-color: #FFF;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+main{
+  padding-bottom: 0;
+}
+
+.mainInicio{
+  position: relative;
+}
+
+.bg-area{
+  position: relative;
+  margin-top: 0;
+  z-index: -17;
+}
+
+.bg-area-inicio{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: -99;
+}
+.bg-area-inicio > img{
+  width: 100%;
+}
+
+.bg-area > img{
+  width: 100%;
+}
+
+.titulo-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-container > img{
+  width: 27%;
+}
+
+#titulo-teste, #titulo-resultado{
+  width: 300px;
+}
+
+.titulo-container > img:nth-child(2){
+  width: 3%;
+  margin-top: 25px;
+}
+
+#iconeEstrela{
+  position: relative;
+  top: 15px;
+}
+
+.texto-inicial-container{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.texto-inicial-container > p{
+  text-align: center;
+  font-size: 15px;
+  width: 65%;
+}
+
+.button-inicio-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.botao-padrao{
+  border: 3px solid #9D3B1F;
+  outline: none;
+  background-color: #FBF3F1;
+  text-transform: uppercase;
+  padding: 10px;
+  width: 235px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #9D3B1F;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.botao-padrao:hover{
+  background-color: #9D3B1F;
+  color: #fff;
+  transition: ease .2s;
+}
+.botao-padrao:focus{
+  outline: none;
+  border: 3px solid #9D3B1F;
+}
+
+
+.div-extension{
+  background-color: #D1704A;
+  width: 100%;
+  height: 20px;
+}
+
+
+
+/* CARD QUESTÕES */
+.questoes-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questoes-infos > p{
+  color: #000;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+
+.card-questoes{
+  width: 850px;
+  height: 525px;
+  background-color: #FBDBCD;
+  box-shadow: 9px 7px 1px #9D3B1F;
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
+  gap: 70px;
+}
+
+.button-controler{
+  position: relative;
+  bottom: 20px;
+  border: 4px solid #9D3B1F!important;
+}
+
+.img-status-container-resultado{
+  margin-top: 40px;
+}
+.img-status-container-resultado > img{
+  width: 270px;
+}
+
+.img-status{
+  width: 270px;
+  margin-top: 10px;
+}
+
+/* QUESTÔES */
+
+.numero-questao{
+  margin-top: -20px;
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.numero-questao > img{
+  width: 5%;
+}
+
+.indicador-questao{
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #9D3B1F;
+}
+
+.each-alternativa{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.num-alternativa{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FBDBCD;
+  color: #000000;
+  padding: 15px;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  width: 35px;
+  height: 35px;
+}
+
+.alternativa{
+  width: 415px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  color: #000;
+  box-shadow: 2px 3px 2px rgba(0,0,0,.5);
+  padding: 8px 0 8px 25px;
+  cursor: pointer;
+}
+
+.texto-alternativa{
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ilustra-questao > img{
+  width: 200px;
+}
+
+.isHidden{
+  display: none;
+}
+
+
+/* RESULTADO STYLE */
+
+#card-resultado{
+  width: 850px;
+  height: 525px;
+}
+
+.resultado-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.resultado-container > img{
+  width: 50%;
+}
+
+.texto-resultado{
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #9D3B1F;
+}
+
+.detalhe-resultado{
+  width: 450px;
+  text-align: center;
+  color: #000;
+}
+
+@media (max-width: 1400px){
+
+  .button-inicio-container{
+    margin-bottom: 150px;
+  }
+}
+
+/* TABLET STYLE */
+@media (min-width: 768px) and (max-width: 992px){
+  .titulo-container > img {
+    width: 40%;
+  }
+
+  .titulo-container > img:nth-child(2){
+    width: 4%;
+  }
+
+  .ilustra-questao{
+    display: none;
+  }
+
+  .card-questoes{
+    width: 620px;
+    height: 550px;
+  }
+
+  #titulo-teste, #titulo-resultado{
+    width: 275px;
+  }
+
+  #card-resultado{
+    width: 620px;
+  }
+}
+
+/* SMALL DEVICES STYLE */
+@media (min-width: 576px) and (max-width: 767px){
+  #titulo-teste, #titulo-resultado{
+    width: 280px;
+  }
+
+  .titulo-container{
+    margin-top: 30px;
+  }
+
+  .titulo-container > img {
+    width: 55%;
+  }
+
+  .titulo-container > img:nth-child(2){
+    width: 6%;
+  }
+
+  .numero-questao > img{
+    width: 7%;
+  }
+
+  .texto-inicial-container > p{
+    font-size: 16px;
+    width: 85%;
+  }
+
+  .bg-area, .bg-area-inicio, .ilustra-questao, .num-alternativa{
+    display: none;
+  }
+
+  .button-inicio-container{
+    margin-bottom: 70px;
+  }
+
+  .card-questoes{
+    width: auto;
+    height: 620px;
+    justify-content: center;
+  }
+
+  .questoes-infos > p{
+    font-size: 15px;
+  }
+
+  .numero-questao{
+    margin-top: -20px;
+  }
+
+  .indicador-questao{
+    font-size: 24px;
+  }
+
+  .img-status, .img-status-container-resultado > img{
+    width: 250px;
+  }
+
+  .img-status-container, .img-status-container-resultado{
+    margin-bottom: 50px;
+  }
+
+  #containerTesteMobile, #containerResultadoMobile{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .alternativa{
+    width: 95%;
+  }
+
+  .each-alternativa{
+    justify-content: center;
+  }
+}
+
+/* MOBILE PHONES STYLE */
+@media (min-width: 375px) and (max-width: 575px){
+  #titulo-teste, #titulo-resultado{
+    width: 273px;
+  }
+
+  .titulo-container{
+    margin-top: 30px;
+  }
+
+  .titulo-container > img {
+    width: 70%;
+  }
+
+  .titulo-container > img:nth-child(2){
+    width: 10%;
+  }
+
+  #iconeEstrela{
+    top: 20px;
+  }
+
+  .numero-questao > img{
+    width: 7%;
+  }
+
+  .texto-inicial-container > p{
+    font-size: 16px;
+    width: 95%;
+  }
+
+  .botao-padrao{
+    width: 250px;
+    padding: 12px;
+  }
+
+  .bg-area, .bg-area-inicio, .ilustra-questao, .num-alternativa{
+    display: none;
+  }
+
+  .button-inicio-container{
+    margin-bottom: 70px;
+  }
+
+  .card-questoes{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding: 85px 20px;
+  }
+
+  .questoes-infos > p{
+    font-size: 15px;
+  }
+
+  .numero-questao{
+    margin-top: -20px;
+  }
+
+  .indicador-questao{
+    font-size: 24px;
+  }
+
+  .img-status, .img-status-container-resultado > img{
+    width: 250px;
+  }
+
+  .img-status-container, .img-status-container-resultado{
+    margin-bottom: 50px;
+  }
+
+  #containerTesteMobile, #containerResultadoMobile{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .alternativa{
+    width: 90%;
+  }
+
+  .each-alternativa{
+    justify-content: center;
+  }
+
+  .texto-resultado{
+    width: 75%;
+    text-align: center;
+  }
+
+  .resultado-container{
+    margin-top: 5px;
+  }
+
+  .resultado-container > img{
+    width: 40%;
+  }
+
+  .detalhe-resultado{
+    width: 310px;
+  }
+
+  #card-resultado{
+    width: auto;
+    height: 560px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 374px){
+  .titulo-container > img{
+    width: 75%;
+  }
+
+  .titulo-container{
+    margin-top: 30px;
+  }
+
+  .titulo-container > img:nth-child(2){
+    width: 10%;
+  }
+
+  #titulo-teste, #titulo-resultado{
+    width: 220px;
+  }
+
+  #iconeEstrela{
+    top: 16px;
+  }
+
+  .alternativa{
+    width: 100%;
+  }
+
+  .numero-questao > img{
+    width: 7%;
+  }
+
+  .texto-inicial-container > p{
+    font-size: 16px;
+    width: 95%;
+  }
+
+  .botao-padrao{
+    width: 250px;
+    padding: 12px;
+  }
+
+  .bg-area, .bg-area-inicio, .ilustra-questao, .num-alternativa{
+    display: none;
+  }
+
+  .button-inicio-container{
+    margin-bottom: 70px;
+  }
+
+  .card-questoes{
+    width: auto;
+    height: auto;
+    justify-content: center;
+    padding: 70px 20px;
+  }
+
+  .questoes-infos > p{
+    font-size: 15px;
+  }
+
+  .numero-questao{
+    margin-top: -20px;
+  }
+
+  .indicador-questao{
+    font-size: 24px;
+  }
+
+  .img-status, .img-status-container-resultado > img{
+    width: 250px;
+  }
+
+  .img-status-container, .img-status-container-resultado{
+    margin-bottom: 50px;
+  }
+
+  #containerTesteMobile, #containerResultadoMobile{
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  .each-alternativa{
+    justify-content: center;
+  }
+
+  .texto-resultado{
+    width: 75%;
+    text-align: center;
+  }
+
+  .resultado-container{
+    margin-top: 5px;
+  }
+
+  .resultado-container > img{
+    width: 40%;
+  }
+
+  .detalhe-resultado{
+    width: 310px;
+  }
+
+  #card-resultado{
+    width: auto;
+    height: 560px;
+  }
+}
